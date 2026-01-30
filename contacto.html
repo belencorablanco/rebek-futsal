@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contacto | Rebek Futsal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+<nav class="navbar">
+  <div class="nav-container">
+    <div class="logo">REBEK FUTSAL</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="sobre-mi.html">Sobre mí</a></li>
+      <li><a href="cursos.html">Mentorías</a></li>
+      <li><a href="contacto.html" class="active">Contacto</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="contact-page">
+  <div class="container contact-grid">
+
+    <div class="contact-info" data-aos="fade-right">
+      <h2>Contactame</h2>
+
+      <div class="contact-item">
+        <img src="assets/icon-phone.png" alt="Teléfono">
+        <span>+54 11 5978 2388</span>
+      </div>
+
+      <div class="contact-item">
+        <img src="assets/icon-mail.png" alt="Email">
+        <span>alan.rebek@gmail.com</span>
+      </div>
+
+      <div class="contact-social">
+        <a href="https://www.instagram.com/rebekfutsal/" target="_blank">
+          <img src="assets/icon-instagram.png" alt="Instagram">
+        </a>
+
+        <a href="https://www.youtube.com/@alanrebek" target="_blank">
+          <img src="assets/icon-youtube.png" alt="YouTube">
+        </a>
+      </div>
+    </div>
+
+    <div class="contact-form-wrapper" data-aos="fade-left">
+      <form
+  class="contact-form"
+  name="contacto"
+  method="POST"
+  data-netlify="true"
+  netlify-honeypot="bot-field"
+>
+  <input type="hidden" name="form-name" value="contacto">
+  <p style="display:none;">
+    <label>No completar: <input name="bot-field"></label>
+  </p>
+
+  <input type="text" name="nombre" placeholder="Nombre" required>
+  <input type="email" name="email" placeholder="Email" required>
+  <textarea name="mensaje" placeholder="Mensaje"></textarea>
+
+  <button type="submit" class="btn-contact">ENVIAR</button>
+</form>
+
+    </div>
+
+  </div>
+</section>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
