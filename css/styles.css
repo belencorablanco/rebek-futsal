@@ -516,50 +516,66 @@ h1, h2, h3 {
 }
 
 /* Form */
-.contact-form-wrapper {
-  background: var(--white);
-  border-radius: 24px;
-  padding: 40px;
-  border: 1px solid #e5e7eb;
-}
-
 .contact-form {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 20px;
+  max-width: 600px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 20px;
 }
 
-.contact-form input,
-.contact-form textarea {
-  background: var(--white);
-  border: 1px solid rgba(0,0,0,0.15);
-  padding: 14px 16px;
-  border-radius: 10px;
-  color: var(--black);
+.input-row {
+  display: flex;
+  gap: 15px;
 }
 
-.contact-form textarea {
+.input-row input,
+.input-row textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  font-family: inherit;
+}
+
+textarea {
+  resize: vertical;
   min-height: 120px;
-  resize: none;
 }
 
-.btn-contact {
-  align-self: flex-start;
-  background: var(--black);
-  color: var(--white);
-  padding: 12px 26px;
-  border-radius: 30px;
-  font-weight: 700;
-  letter-spacing: 1px;
+.btn-enviar {
+  align-self: flex-end;
+  padding: 12px 28px;
+  border-radius: 8px;
   border: none;
+  background-color: #111;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
 }
 
-.btn-contact:hover {
-  background: #e5e7eb;
+.btn-enviar:hover {
+  background-color: #333;
   transform: translateY(-2px);
 }
+
+@media (max-width: 600px) {
+  .input-row {
+    flex-direction: column;
+  }
+
+  .btn-enviar {
+    width: 100%;
+    text-align: center;
+  }
+}
+
 
 /* ============ RESPONSIVE ============ */
 @media (max-width: 1024px) {
